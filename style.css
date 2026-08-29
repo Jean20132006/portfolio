@@ -1,0 +1,180 @@
+body{
+  position: relative; /*for scrollspy*/
+}
+
+header{
+  background-image: linear-gradient(rgb(0,0,0,.4), rgb(0,0,0,.7)), 
+  url("https://i.ytimg.com/vi/o3_E78ooIVA/sddefault.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-height: 30vh;
+  padding: 20%;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(80,0,0);
+}
+
+.Hero-image-text{
+  margin: 0px 10px auto auto;
+  color: white;
+}
+
+.img-hero-section {
+  transform: scale(1);
+  transition-duration: .5s ease-in-out;
+}
+#image1 {
+  border-radius: 100%;
+  border: 3px solid grey;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  width: 80px;
+  height: 80px; 
+}
+
+/*styling my name on the hero section*/
+#my-name {
+ /*background-color: #4c4c47;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+  margin: 10px auto;
+  overflow: hidden;*/
+  transform: scale(1);
+  transition-duration: .5s ease-in-out;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+/*styling the text underneath of my name*/
+h3 {
+  background-color: #4c4c47;
+  width: 180px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+  margin: 0px auto;
+  overflow: hidden;
+  transform: scale(1);
+  transition-duration: .5s ease-in-out;
+}
+#text-under-myname {
+  font-size: 12px;
+}
+
+/* hover my name and the text underneath*/
+#my-name:hover {
+  transform: scale(1.3);
+}
+h3:hover {
+  transform: scale(1.3);
+}
+
+/*hover my picture*/
+.img-hero-section:hover img {
+  transform: scale(1.1); 
+}
+
+.button {
+  margin-top: 20px;
+}
+
+/*styling the header of each section*/
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+.header-style {
+  margin-bottom: 40px;
+  color: white;
+}
+
+#skills-style {
+  margin-bottom: 40px;
+  color: black;
+}
+.skills-paragraph {
+  margin-top: 10px;
+}
+.mission-sec-par {
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.container{
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+/*styling contact links*/
+.contact-link {
+  font-size: 50px;
+  color: #73d2de;
+}
+
+section{
+  padding: 40px 0;
+}
+section#mission-section{
+  background-color: black;
+}
+section#skills-section{
+  background-color: #73d2de;
+}
+section#contact-section{
+  background-color: black;
+}
+
+#mission-section-target,
+#skills-section-target,
+#contact-section-target {
+  position: relative;
+  top: -100px;
+}
+
+/* set the nav bar navigation elements to the right*/
+.navbar-nav {
+  position: absolute;
+  right: 30px;
+  font-size: 20px;
+}
+
+/*the navbar will be transparent when scrolling 
+(body on the top of the navbar)*/
+.scroll-top .navbar{
+  background-color: green !important;
+}
+
+span {
+  font-weight: bold;
+}
+
+.xlink-image {
+  height: 130px;
+}
+
+/*styling the footer*/
+footer {
+  color: black;
+  text-align: center;
+  background-color: green;
+  font-weight: bold;
+  width: 100%;
+}
+.col-sm-4 {
+   transform: scale(1);
+  transition-duration: .5s ease-in-out;
+}
+
+.col-sm-4:hover .contact-link{
+  color: blue;
+}
