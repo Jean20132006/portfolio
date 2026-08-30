@@ -5,13 +5,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title> My bio </title>
+  <title> My Portfolio </title>
   <!--BootStrap Icons link-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!--BootStrap CSS link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--other links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
  <!--CSS link-->
-  <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
   <!--scroll-top is used to change the color of the <navbar-->
@@ -34,8 +36,10 @@
       <!--The section below will collapse for smaller screens-->
       <div class="collapse navbar-collapse" id="nav-collapse">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link"  href="#mission-section-target">Mission</a>
+          <a class="nav-link"  href="#mission-section-target">About</a>
           <a class="nav-link" href="#skills-section-target">Skills</a>
+          <a class="nav-link"  href="#education-section-target">Education</a>
+          <a class="nav-link" href="#projects-section-target">Projects</a>
           <a class="nav-link" href="#contact-section-target">Contact</a>
         </div>
       </div>
@@ -45,12 +49,16 @@
   
   <!--Hero image section-->
   <header id="home">
-    <div class="Hero-image-text">
-      <div class="img-hero-section">
-        <img class="img-fluid" id="image1" src="https://i.imgur.com/yhlrbPe.jpeg" alt="jean eric">
-      </div>
-        <h1 class="display-6" id="my-name">Jean Eric Tsanga</h1> 
-        <h3 class="responsive-font-example" id="text-under-myname"><em>Bringing coding to everyone</em></h3> 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="hero-name">Jean Eric Tsanga</div>
+          <div class="hero-eyebrow">Professional</div>
+          <h1>EMBEDED SYSTEM<br><span class="accent">Engineer</span></h1>
+        </div>
+        <div class="col-sm-6">
+          <img class="img-fluid" id="profile-image" src="profile_picture.png" alt="profile picture">
+        </div>
       </div>
     </div>
   </header>
@@ -60,19 +68,33 @@
   <section id="mission-section">
     <div id="mission-section-target"></div> <!--This line is invisible-->
     <div class="container">
-      <h2 class="header-style">My mission</h2>
+      <h2 class="header-style">About me</h2>
       <div class="row">
         <div class="col-sm-6">
           <img class="img-fluid" id="mission-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXIlMjB3aXRoJTIwY29kZSUyMG9uJTIwdGhlJTIwc2NyZWVufGVufDB8fDB8fHww" alt="jean eric picture">
         </div>
-        <div class="col-sm-6">
-          <p class="mission-sec-par">
-            Technology has a huge impact on our lives. My mission is to make my contribution. 
-            by developing Apps that will facilitate our lives. Later, I will share my knowledge. 
-            in coding for people of different backgrounds and career interests. Since I'm also 
-            interested in the electronic domain, I will create devices to help people. 
-            more importantly those with health issues.
+        <div class="col-sm-6 text">
+          <p class="about-me">
+            I am an <strong>Embedded Systems Engineer and Web Developer</strong>
+            passionate about turning ideas into practical technology. 
+            I design intelligent electronic systems and modern web 
+            applications that solve real-world problems and improve 
+            everyday life.<br>
+
+            <br>My interests span <strong>embedded systems, IoT, electronics, 
+            software development, and human-centered technology</strong>. 
+            I am particularly motivated by projects that can have a 
+            meaningful impact on people's quality of life.<br>
+
+            <br>I also believe in sharing knowledge and inspiring 
+            others to explore the world of technology. <strong>My goal is 
+            to build useful things, solve meaningful problems, and 
+            help others create.</strong>
           </p>
+          <div class="cv-hire-buttons">
+          <button class="btn btn-outline-light">Hire me</button>
+          <button class="btn btn-outline-info">Download cv</button>
+          </div>
         </div>
       </div>
     </div>
@@ -176,6 +198,71 @@
       </div>
     </div>
   </section>
+
+  <!--Education section-->
+  <section id="education-section">
+    <div id="education-section-target"></div> <!--This line is invisible-->
+    <div class="container">
+      <h2 id="education-style">Education</h2>
+      <div class="row line">
+        <div class="horizontal-line"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+            <div class="academic-year">
+              2026
+            </div>
+            <div class="school">
+              University of Arizona
+            </div>
+            <div class="major">
+              Senior student in Electrical & Computer 
+              Engineering
+            </div> 
+        </div>
+        <div class="col-sm-4">
+            <div class="academic-year">
+              2022
+            </div>
+            <div class="school">
+              Certification
+            </div>
+            <div class="major">
+              Web development
+            </div>  
+        </div>
+        <div class="col-sm-4">
+            <div class="academic-year">
+              2012
+            </div>
+            <div class="school">
+              University of Douala (Cameroon)
+            </div>
+            <div class="major">
+              Bachelor in Electrical Engineering
+            </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--My projects section-->
+  <section id="projects-section">
+    <div id="projects-section-target"></div> <!--This line is invisible-->
+    <div class="container">
+      <h2 id="skills-style">My Projects</h2>
+      <div class="row">
+        <div class="first-project">E-commerce website</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 id="skills-style"> </h2>
+      <div class="row">
+        <div class="first-project">Home IOT</div>
+      </div>
+    </div>
+  </section>
   
   <!--contact section-->
   <section id="contact-section">
@@ -205,12 +292,14 @@
   
   <!--footer section-->   
   <footer>
-    &copy; Jean Eric 2024
+    &copy; Jean Eric 2026
   </footer>
    
   <!--BootStrap Javascript link-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
+
+</html>
 
 </html>
