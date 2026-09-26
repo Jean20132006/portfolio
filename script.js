@@ -9,3 +9,13 @@ function onScroll() {
     document.body.classList.add("scroll-top");
   }
 }
+
+function hireMe() {
+    const email = "jeanerictsanga8@gmail.com";
+    const subject = "Job Opportunity";
+    const body =
+        "Hello,\n\nI would like to discuss a potential opportunity with you.\n\nBest regards,";
+
+    window.location.href =
+        `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
