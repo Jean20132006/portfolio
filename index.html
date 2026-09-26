@@ -51,8 +51,10 @@
   <header id="home">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <div class="hero-name">Jean Eric Tsanga</div>
+        <div class="col-sm-6" id="name-container">
+          <!--<marquee behavior="alternate">-->
+            <div class="hero-name">Jean Eric Tsanga</div>
+          <!--</marquee>-->
           <div class="hero-eyebrow">Professional</div>
           <h1>EMBEDED SYSTEM<br><span class="accent">Engineer</span></h1>
         </div>
@@ -92,8 +94,19 @@
             help others create.</strong>
           </p>
           <div class="cv-hire-buttons">
-          <button class="btn btn-outline-light">Hire me</button>
-          <button class="btn btn-outline-info">Download cv</button>
+            <button class="btn btn-outline-light" onclick="hireMe()">
+                Hire me
+            </button>
+            <!--<div class="hire-me">
+            <a href="#contact-section" class="btn btn-outline-light">Hire me</a>
+            </div>-->
+            <div class="download-CV">
+              <a href="My Resume.pdf"
+                class="btn btn-outline-info"
+                download="My Resume.pdf">
+                  Download CV
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -253,16 +266,89 @@
     <div class="container">
       <h2 id="skills-style">My Projects</h2>
       <div class="row">
-        <div class="first-project">E-commerce website</div>
+        <div class="first-project">E-commerce website Project</div>
       </div>
       <div class="row">
-        <a href="https://jean20132006.github.io/Amazon-website/amazon.html">E-commerce link</a>
+        <div class="col-sm-6 text">
+          <p class="e-commerce-description">
+            <span class="text-title">
+              <strong>Amazon-Style E-Commerce Application Description</strong>
+            </span><br>
+            
+            Developed a full-stack e-commerce application inspired by Amazon, 
+            featuring a responsive and user-friendly shopping experience. 
+            The application includes dynamic product browsing, product details, 
+            shopping cart management, checkout functionality, product search and 
+            filtering, and responsive layouts for desktop and mobile devices.<br>
+
+            The project includes a JavaScript-based frontend integrated with a 
+            Node.js/Express backend and MongoDB database. User authentication, 
+            product data management, cart functionality, and API-based communication 
+            were implemented to create a complete end-to-end shopping experience.<br>
+
+            Key features include dynamic product displays, persistent shopping 
+            carts using local storage, product and manufacturer carousels, 
+            checkout workflows, responsive UI design, and RESTful API integration.<br>
+
+            **Technologies:** HTML5, CSS3, JavaScript, Bootstrap, Node.js, Express.js, 
+            MongoDB, REST APIs, Git/GitHub.<br>
+            Visit the website at:
+            <a href="https://jean20132006.github.io/Amazon-website/amazon.html">
+              E-commerce link
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <a href="https://jean20132006.github.io/Amazon-website/amazon.html">
+          <img class="img-fluid" id="mission-image" src="slide-picture.png" alt="slide-picture">
+          </a>
+        </div>
       </div>
     </div>
     <div class="container">
       <h2 id="skills-style"> </h2>
       <div class="row">
-        <div class="first-project">Home IOT</div>
+        <div class="first-project">Blood Loss Estimation Device project</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 text">
+          <p class="e-commerce-description">
+            <span class="text-title">
+              <strong>Blood Loss Estimation Device Description</strong>
+            </span><br>
+            
+            This invention relates to a novel, real-time blood loss 
+            quantification device for use in surgical and obstetric 
+            settings. The system estimates blood volume absorbed by 
+            surgical gauze or sponges by extracting hemoglobin into a 
+            fixed-volume reagent (e.g., Drabkin's reagent), forming 
+            cyanmethemoglobin, and then quantifying absorbance at 540nm 
+            using an optical detection module based on the Beer-Lambert 
+            Law.
+
+            The device includes a disposable gauze cartridge with a sieve, 
+            a reagent chamber, and an optical cuvette aligned with 
+            dual-wavelength LEDs (540 nm and 850-880 nm) and a photodetector
+             (e.g., OPT101). A microcontroller calculates hemoglobin 
+             concentration, compensates for turbidity via secondary IR LED 
+             measurement, and estimates total blood loss in mL using 
+             patient-entered baseline hemoglobin.
+
+            The solution improves accuracy over gravimetric and camera-based 
+            methods (e.g., Gauss Triton), minimizes interference from 
+            non-blood fluids, and is suitable for clinical, low-resource, 
+            and emergency settings.<br>
+            Watch video demo at:
+            <a href="https://jean20132006.github.io/Amazon-website/amazon.html">
+              E-commerce link
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <a href="https://jean20132006.github.io/Amazon-website/amazon.html">
+          <img class="img-fluid" id="mission-image" src="blood-device-pic.png" alt="slide-picture">
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -273,19 +359,24 @@
     <div class="container">
       <h2 class="header-style">Contact</h2>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-6 col-xl-3">
           <div>
-            <a class="contact-link"  href="linkedin.com/in/jean-eric-tsanga-9897b0316"><i class="bi bi-linkedin"></i></a>
+            <a class="contact-link"  href="https://www.facebook.com/rapha.pakaro"><i class="bi bi-messenger"></i></a>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6 col-xl-3">
           <div>
-            <a class="contact-link"  href="#facebook"><i class="bi bi-facebook"></i></a>
+            <a class="contact-link"  href="mailto:jeanerictsanga8@email.com"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6 col-xl-3">
           <div>
-            <a class="contact-link"  href="#email"><i class="bi bi-envelope"></i></a>
+            <a class="contact-link"  href="https://www.linkedin.com/feed/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div>
+            <a class="contact-link"  href="https://www.facebook.com/rapha.pakaro"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
       </div>
@@ -302,7 +393,5 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
-
-</html>
 
 </html>
