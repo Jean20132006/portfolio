@@ -2,6 +2,10 @@ body{
   position: relative; /*for scrollspy*/
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root{
     --bg:#0e0f0d;
     --panel:#141511;
@@ -235,10 +239,73 @@ strong{
 
 .first-project{
   font-size: 24px;
-  font-weight: 600;  
+  font-weight: 600;
+  margin-bottom: 20px; 
 }
 
 .row a{
   text-decoration: none;
   color: blue;
+}
+
+.download-CV a{
+  color:#73d2de;
+}
+
+.hire-me a{
+  color: white;
+}
+
+#name-container{
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  border-radius: 20px;
+  /*border: 1px solid #00e5ff;*/
+  border: 1px solid #a1cca5;  
+}
+#name-container::before{
+  content: '';
+  position: absolute;
+  inset: 0%;
+  border-radius: 20px;
+  z-index: -5;
+  background: conic-gradient(from 0deg,
+                             transparent 0%,
+                             #00e5ff 15%,
+                             /*#8dd639 15%,*/
+                              transparent 30%);
+  animation: spin 3s linear infinite;
+}
+
+#name-container::after{
+  content: '';
+  position: absolute;
+  inset: 1.5px;
+  z-index: -2;
+  background-color: white;
+  border-radius: 18px;
+}
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.e-commerce-description{
+  color: black;
+  text-align: left;
+  font-size: 16px;
+}
+
+.e-commerce-description a{
+  color:#5f9a1f;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration:underline;
+
+}
+
+.text-title{
+  font-size: 20px;
 }
